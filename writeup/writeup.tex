@@ -1,0 +1,58 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{preamble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Edit These for yourself
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\course{CSE 515T}
+\newcommand\userID{Ray Wu, 443929 \\ Shane Tong, 449882 \\ Michael Guo, 467617}
+\usepackage{courier}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{courier}
+\usepackage{wrapfig}
+\newcommand{\acro}[1]{\textsc{\MakeLowercase{#1}}}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+
+\def\LDA{\acro{LDA}}
+\def\SVM{\acro{SVM}}
+\def\BIC{\acro{BIC}}
+
+\newcommand{\mysection}[2][]{\section[#1]{#2}\setcounter{figure}{0}\renewcommand{\thefigure}{\thesection-\arabic{figure}}}
+\newcommand{\mysubsection}[2][]{\subsection[#1]{#2}\setcounter{figure}{0}\renewcommand{\thefigure}{\thesubsection-\arabic{figure}}}
+\newcommand{\mysubsubsection}[2][]{\subsubsection[#1]{#2}\setcounter{figure}{0}\renewcommand{\thefigure}{\thesubsubsection-\arabic{figure}}}
+ 
+\begin{document}
+
+\mysection{Visualization}
+\begin{wrapfigure}{l}{0.5\textwidth}
+	\includegraphics[width=11cm]{images/vis_Branin.png}
+	\caption{The model-marginal predictive mean function.}
+	\caption{Birds}
+\end{wrapfigure}
+
+
+
+\mysection{Model Fitting}
+
+\mysubsection{Branin function}
+\mysubsubsection{Log Model Evidence}
+\mysubsubsection{\BIC~score}
+
+\mysubsection{Branin function after $\log$ transformation}
+\mysubsubsection{Log Model Evidence}
+\mysubsubsection{\BIC~Score}
+
+\mysubsection{\LDA}
+\mysubsubsection{\BIC~Score}
+
+\mysubsection{\SVM}
+\mysubsubsection{\BIC~Score}
+
+\mysection{Bayesian Optimization}
+
+\mysection{Bonus}
+
+    
+\end{document}
